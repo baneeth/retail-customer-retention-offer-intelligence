@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": {
+    "transaction_to_order_revenue_reconciles": true,
+    "order_to_customer_revenue_reconciles": true,
+    "customer_count_consistent": true,
+    "one_primary_offer_per_customer": true,
+    "top_offer_ranks_are_one_to_three": true,
+    "no_discount_exceeds_safe_cap": true,
+    "offer_ids_valid": true,
+    "simulated_outcomes_labelled": true,
+    "only_primary_offers_sent_in_simulation": true
+  },
+  "controls": {
+    "clean_transaction_rows": 397884,
+    "orders": 18532,
+    "customers": 4338,
+    "catalogue_offers": 27,
+    "eligible_offer_records": 10722,
+    "reconciled_revenue_gbp": 8911407.9
+  }
+}

@@ -1,0 +1,30 @@
+# Python and local development
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.openai/
+tmp/
+docs/
+outputs/pdf/
+
+# Generated analyses; reproducible with python src/run_pipeline.py
+outputs/prepared/*
+!outputs/prepared/offer_catalogue.csv
+!outputs/prepared/margin_assumptions.csv
+!outputs/prepared/feedback_taxonomy.csv
+!outputs/prepared/data_audit.json
+!outputs/prepared/backend_quality_report.json
+!outputs/prepared/simulated_performance_summary.json
+outputs/*.zip
+
+# Keep the original public workbook; omit duplicate downloads and logs.
+work/*
+!work/online_retail/
+!work/online_retail/Online Retail.xlsx
+
+# The old Sites starter is an independent local Git repository.
+frontend/

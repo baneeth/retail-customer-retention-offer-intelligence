@@ -1,0 +1,12 @@
+{
+  "is_simulated": true,
+  "sent": 4338,
+  "accepted": 1389,
+  "redeemed": 1009,
+  "acceptance_rate": 0.3202,
+  "redemption_rate": 0.2326,
+  "positive_feedback": 327,
+  "negative_feedback": 118,
+  "simulated_follow_up_revenue_gbp": 580462.21,
+  "simulated_net_gross_profit_gbp": 231936.31
+}

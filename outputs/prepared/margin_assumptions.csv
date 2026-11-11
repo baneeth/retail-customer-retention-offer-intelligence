@@ -1,0 +1,9 @@
+retail_category,estimated_margin_pct,min_retained_gp_pct_of_list_price,policy_discount_cap_pct
+paper_stationery,0.42,0.15,0.10
+gift_accessories,0.50,0.15,0.15
+kitchen_dining,0.38,0.15,0.08
+home_decor_lighting,0.45,0.15,0.12
+seasonal_event,0.50,0.15,0.15
+storage_organisation,0.40,0.15,0.08
+gifts_novelty,0.45,0.15,0.12
+service_or_adjustment,0.00,0.00,0.00

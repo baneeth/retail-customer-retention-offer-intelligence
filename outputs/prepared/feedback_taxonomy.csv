@@ -1,0 +1,9 @@
+feedback_theme,sentiment,meaning,default_follow_up
+delivery_delay,negative,Order arrived later than expected,Offer delivery support or priority fulfilment
+quality_issue,negative,Product quality did not meet expectations,Review product issue and consider replacement or credit
+wrong_or_missing_item,negative,Order was incomplete or incorrect,Resolve order issue before marketing another offer
+price_value_concern,negative,Customer felt the order was poor value,Use bundle or threshold value offer rather than a blanket discount
+product_unavailable,negative,Customer could not find a wanted product,Notify on restock or offer similar products
+no_longer_relevant,neutral,Customer does not currently need the category,Pause repeated promotion and wait for new activity
+positive_experience,positive,Customer expressed satisfaction,Use loyalty or early-access benefit
+no_response,neutral,Customer did not respond to outreach,Do not escalate automatically

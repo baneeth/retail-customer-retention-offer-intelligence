@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Retail customer retention and offer intelligence dashboard" />
+  <title>Retention Pulse</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="mark">R</span><div><strong>Retention Pulse</strong><small>Retail customer intelligence</small></div></div>
+      <div class="asof">Analysis date <strong id="analysisDate">—</strong></div>
+    </header>
+    <section class="intro">
+      <div><p class="eyebrow">Decision dashboard</p><h1>Know who needs attention<br><em>before they leave.</em></h1></div>
+      <p class="intro-copy">Customer value, buying behaviour, product preference, and margin-safe offers in one working view.</p>
+    </section>
+    <section class="kpis" aria-label="Key performance indicators">
+      <article><span>Identified customers</span><strong id="customerCount">—</strong><small>Across completed purchases</small></article>
+      <article><span>Customer revenue</span><strong id="revenue">—</strong><small>Clean transaction history</small></article>
+      <article class="alert"><span>High-priority retention</span><strong id="priorityCount">—</strong><small>Valuable inactive customers</small></article>
+      <article><span>Recurring bulk candidates</span><strong id="bulkCount">—</strong><small>Potential account relationships</small></article>
+    </section>
+    <section class="board">
+      <article class="panel lifecycle"><div class="panel-head"><div><p class="eyebrow">Customer activity</p><h2>Lifecycle mix</h2></div><span class="pill">Behaviour-led</span></div><div id="lifecycleBars" class="bars"></div></article>
+      <article class="panel category"><div class="panel-head"><div><p class="eyebrow">Product preference</p><h2>Top categories</h2></div><span class="pill">Merchandise only</span></div><div id="categoryBars" class="bars"></div></article>
+      <article class="panel guard"><p class="eyebrow">Profit guardrail</p><h2>Offers never bypass product margin.</h2><p>Direct discounts are checked against the preferred category’s safe cap. Service and bundle offers stay available when a deeper price cut would damage profit.</p><div class="guard-rule"><span>Requested discount</span><b>≤</b><span>Safe category cap</span></div></article>
+    </section>
+    <section class="simulation panel">
+      <div class="simulation-copy"><p class="eyebrow">Learning sandbox</p><h2>Simulated campaign outcomes</h2><p>These figures demonstrate how the feedback loop would be measured. They are not real customer responses.</p><span id="qualityStatus" class="quality">Backend checks: —</span></div>
+      <div class="simulation-kpis"><div><span>Acceptance</span><strong id="simAcceptance">—</strong></div><div><span>Redemption</span><strong id="simRedemption">—</strong></div><div><span>Follow-up revenue</span><strong id="simRevenue">—</strong></div><div><span>Net gross profit</span><strong id="simProfit">—</strong></div></div>
+      <div class="offer-performance"><h3>Strongest simulated offers</h3><div id="offerPerformance"></div></div>
+    </section>
+    <section class="queue panel">
+      <div class="queue-head"><div><p class="eyebrow">Action queue</p><h2>Customer offer recommendations</h2></div><div class="controls"><input id="search" type="search" placeholder="Search customer ID" aria-label="Search customer ID" /><select id="buyerFilter" aria-label="Filter buyer type"><option value="all">All customer types</option><option value="regular retail customer">Regular retail</option><option value="large-order candidate">Large-order candidates</option><option value="recurring bulk/wholesale candidate">Recurring bulk candidates</option></select><select id="priorityFilter" aria-label="Filter retention priority"><option value="all">All priorities</option><option value="high">High priority</option><option value="medium">Medium priority</option><option value="low">Low priority</option><option value="none">No current priority</option></select></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Customer</th><th>Profile</th><th>Activity</th><th>Preferred category</th><th>Primary offer</th><th>Discount</th><th>Value</th></tr></thead><tbody id="customerRows"></tbody></table></div>
+      <div class="table-foot"><span id="resultCount"></span><button id="showMore">Show more</button></div>
+    </section>
+    <section class="legend"><div><span class="dot high"></span><strong>High priority</strong><p>Valuable inactive relationship</p></div><div><span class="dot medium"></span><strong>Medium priority</strong><p>Needs timely follow-up</p></div><div><span class="dot low"></span><strong>Low priority</strong><p>Low-cost re-engagement</p></div><div><span class="dot none"></span><strong>No priority</strong><p>Active or recent customer</p></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

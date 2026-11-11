@@ -1,0 +1,15 @@
+{
+  "source_rows": 541909,
+  "date_min": "2010-12-01 08:26:00",
+  "date_max": "2011-12-09 12:50:00",
+  "missing_customer_id_rows": 135080,
+  "missing_description_rows": 1454,
+  "cancelled_invoice_rows": 9288,
+  "non_positive_quantity_rows": 10624,
+  "non_positive_price_rows": 2517,
+  "clean_rows": 397884,
+  "clean_customers": 4338,
+  "clean_orders": 18532,
+  "clean_revenue": 8911407.9,
+  "estimated_gross_profit": 3499601.36
+}
